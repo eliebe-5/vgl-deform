@@ -1,0 +1,7 @@
+fips_begin_app(Project windowed)
+    fips_vs_warning_level(3)
+    fips_files(Project.cc deform.cc volmesh.cc  deform.h memorypool.h volmesh.h)
+    oryol_shader(shaders.glsl)
+    fips_deps(Gfx Assets Input)
+    oryol_add_web_sample(Triangle "The canonical triangle demo" "emscripten" Triangle.jpg "Triangle/Triangle.cc")
+fips_end_app()

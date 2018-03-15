@@ -1,0 +1,13 @@
+# https://ci.appveyor.com/project/floooh/oryol
+---
+branches:
+    except:
+        - gh-pages
+
+clone_depth: 3 
+
+# just perform builds for now, don't run tests
+build_script:
+    - cmd: c:/Python36/python.exe fips build win64-vstudio-debug
+    - cmd: c:/Python36/python.exe fips build d3d11-win64-vstudio-debug
+
